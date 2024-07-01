@@ -50,7 +50,8 @@ To run the *KluSIM* algorithm, follow these steps:
     medoids = kmedoids_initialization.InitializeMedoids(X, n_clusters, heuristic=heuristic, metric=metric)
 
     ```
-*Note*: The k-means++ was created with the goal of accelerating the convergence of the k-means algorithm. Therefore, it is possible to test the k-means++ as an initialization method only for Euclidean distance.
+    
+    *Note*: The k-means++ was created with the goal of accelerating the convergence of the k-means algorithm. Therefore, it is possible to test the k-means++ as an initialization method only for Euclidean distance.
 
 
 2. Then, set the medoids, and call swap method:
