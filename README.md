@@ -56,8 +56,6 @@ To run the *KluSIM* algorithm, follow these steps:
 2. Then, set the medoids, and call swap method:
 
     ```python
-
-    medoids = kmedoids_initialization.InitializeMedoids(X, n_clusters, heuristic='BUILD', metric=metric)
     ks = klusim.KluSIM(n_clusters, metric=metric, access_method_tree='KDTree', ref_point = 'mean') # ref_point can be either 'mean' or 'median'
     ks.set_medoids_idx(medoids)
     ks_results = ks.swap(X)
